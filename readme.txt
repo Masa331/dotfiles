@@ -11,3 +11,6 @@ To clone on machine:
 
 Make a symlink:
   ln -s .dotfiles/file .file
+
+TODO:
+  add script to do removing and symlinking files
