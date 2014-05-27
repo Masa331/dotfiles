@@ -7,56 +7,54 @@ set fileencodings=utf-8,iso-8859-2
 set nocompatible
 filetype off
 
-" ### Plugin manager Vundle
+" ### Bundle manager Vundle
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-rails'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-rails'
 " Parove elementy kolem slov/vet/etc - uvozovky/tagy/etc
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-vividchalk'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-vividchalk'
 " komentovani c gc
-Plugin 'tomtom/tcomment_vim'
+Bundle 'tomtom/tcomment_vim'
 " Utility
-Plugin 'MarcWeber/vim-addon-mw-utils'
+Bundle 'MarcWeber/vim-addon-mw-utils'
 " Utility
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic'
-Plugin 'ngmy/vim-rubocop'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'vim-scripts/ruby-matchit'
-Plugin 'groenewege/vim-less'
-" Plugin 'mattn/emmet-vim'
-" Plugin 'ecomba/vim-ruby-refactoring'
-" Plugin 'thoughtbot/vim-rspec'
-" Plugin 'tpope/vim-markdown'
-" Plugin 'tsaleh/vim-supertab'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'vim-bundles/fuzzyfinder'
-" Plugin 'airblade/vim-gitgutter'
-" Plugin 'astashov/vim-ruby-debugger'
-" Plugin 'timcharper/textile.vim'
-" Plugin 'tpope/vim-cucumber'
-" Plugin 'tpope/vim-bundle'
-" Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-fugitive'
-" Plugin 'mileszs/ack.vim'
-" Plugin 'godlygeek/tabular'
-" Plugin 'tpope/vim-endwise'
-" Plugin 'tpope/vim-commentary'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/syntastic'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/ruby-matchit'
+" Bundle 'mattn/emmet-vim'
+" Bundle 'ecomba/vim-ruby-refactoring'
+" Bundle 'thoughtbot/vim-rspec'
+" Bundle 'tpope/vim-markdown'
+" Bundle 'tsaleh/vim-supertab'
+" Bundle 'vim-ruby/vim-ruby'
+" Bundle 'vim-bundles/fuzzyfinder'
+" Bundle 'airblade/vim-gitgutter'
+" Bundle 'astashov/vim-ruby-debugger'
+" Bundle 'timcharper/textile.vim'
+" Bundle 'tpope/vim-cucumber'
+" Bundle 'tpope/vim-bundle'
+" Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-fugitive'
+" Bundle 'mileszs/ack.vim'
+" Bundle 'godlygeek/tabular'
+" Bundle 'tpope/vim-endwise'
+" Bundle 'tpope/vim-commentary'
 
 " ### Other settings ###
-call vundle#end()
-filetype plugin indent on
 
+filetype plugin indent on " required!
 set backspace=indent,eol,start
 set scrolloff=3
 set directory=/tmp

@@ -1,3 +1,5 @@
+shell -${SHELL}
+
 bindkey "^[[1;3D" prev # xterm: alt + left arrow
 bindkey "^[[1;3C" next # xterm: alt + right arrow
 bindkey "^[[d" prev

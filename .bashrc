@@ -112,10 +112,6 @@ stty -ixon -ixoff
 # přemapovat caps lock na esc
 #[[ -e ~/.xmodmap-esc ]] && xmodmap ~/.xmodmap-esc
 
-# [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
