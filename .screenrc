@@ -5,6 +5,7 @@ bindkey "^[[1;3C" next # xterm: alt + right arrow
 bindkey "^[[d" prev
 bindkey "^[[c" next
 
+screen -t git
 screen -t bash
 screen -t vim
 screen -t test-single

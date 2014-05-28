@@ -6,6 +6,7 @@
 
 [alias]
     st = status
+    r = rebase -i HEAD~10
     ci = commit
     br = branch
     co = checkout
