@@ -6,6 +6,8 @@ bindkey "^[[d" prev
 bindkey "^[[c" next
 
 screen -t git
+select 0
+stuff "echo 'AHOJ'; gitsh^M"
 screen -t bash
 screen -t vim
 screen -t test-single
