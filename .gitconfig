@@ -6,7 +6,8 @@
 
 [alias]
     st = status
-    r = rebase -i HEAD~10
+    rx = rebase -i HEAD~10
+    ri = rebase -i HEAD~1
     ci = commit
     br = branch
     co = checkout
