@@ -34,7 +34,8 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
 Plugin 'groenewege/vim-less'
-Plugin 'exu/pgsql.vim'
+" Plugin 'exu/pgsql.vim'
+Plugin 'boblin/pgsql.vim'
 " Plugin 'mattn/emmet-vim'
 " Plugin 'ecomba/vim-ruby-refactoring'
 " Plugin 'thoughtbot/vim-rspec'
@@ -111,6 +112,8 @@ if has("autocmd")
 else
   set autoindent		" always set autoindenting on
 endif
+
+au BufReadPost *.cap set syntax=ruby
 
 
 " ### Mappings ###
