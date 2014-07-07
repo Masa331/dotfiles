@@ -25,7 +25,9 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 " Utility
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+" Plugin 'honza/vim-snippets'
+Plugin 'Masa331/vim-snippets'
+
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
