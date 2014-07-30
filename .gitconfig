@@ -10,6 +10,7 @@
     rhi = reset --hard HEAD~1
     rhx = reset --hard HEAD~10
     ci = commit
+    vomit = commit
     br = branch
     co = checkout
     df = diff
