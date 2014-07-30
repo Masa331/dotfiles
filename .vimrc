@@ -35,6 +35,8 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
 Plugin 'groenewege/vim-less'
 Plugin 'exu/pgsql.vim'
+Plugin 'briancollins/vim-jst'
+
 " Plugin 'mattn/emmet-vim'
 " Plugin 'ecomba/vim-ruby-refactoring'
 " Plugin 'thoughtbot/vim-rspec'
