@@ -31,6 +31,8 @@ Plugin 'bling/vim-airline'
 Plugin 'boblin/pgsql.vim'
 >>>>>>> 1390593ffa5e7bb38d5a99aeb1b3830d3651899c
 Plugin 'tpope/vim-fugitive'
+Plugin 'moll/vim-bbye'
+
 call vundle#end()
 
 " ### Settings
@@ -58,12 +60,16 @@ syntax enable
 au BufReadPost *.cap set syntax=ruby
 
 " ### Vim ColorScheme
-colorscheme grb256
+" colorscheme grb256
+colorscheme inkpot
 
 " ### Airline configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
+let g:airline_section_c = "%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#"
+let g:airline_section_b = ""
+
 
 " ### Mappings
 map   <silent> <F5> mmgg=G`m^
@@ -73,8 +79,15 @@ command! Rroutes :e config/routes.rb
 command! RTroutes :tabe config/routes.rb
 nnoremap ; :
 
+" ### word a omnicompletition to strl-space
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+      \ "\<lt>C-n>" :
+      \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+      \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+      \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
+
 let mapleader = ","
 map <Leader>g :bp<CR>
 map <Leader>h :bn<CR>
-map <Leader>x :bdelete<CR>
-map <Leader>c :bwipeout<CR>
+map <Leader>x :Bdelete<CR>
