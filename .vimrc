@@ -79,7 +79,10 @@ command! Rroutes :e config/routes.rb
 command! RTroutes :tabe config/routes.rb
 nnoremap ; :
 
-" ### word a omnicompletition to strl-space
+" ### One character append to space+char
+:nnoremap <space> :exec "normal a".nr2char(getchar())."\e"<CR>
+
+" ### word a omnicompletition to ctrl-space
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
       \ "\<lt>C-n>" :
       \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
