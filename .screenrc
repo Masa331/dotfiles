@@ -13,8 +13,5 @@ screen -t vim
 screen -t test-single
 screen -t test-all
 screen -t server
-screen -t psql
-select 6
-stuff "echo 'AHOJ'; psql^M"
 caption always "%H%=%-Lw%{R.}%n%f*%{-} %t%+Lw%=%c:%s"
 hardstatus alwayslastline "%n %t%? - %h"
