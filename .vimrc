@@ -29,7 +29,6 @@ Plugin 'groenewege/vim-less'
 Plugin 'briancollins/vim-jst'
 Plugin 'bling/vim-airline'
 Plugin 'boblin/pgsql.vim'
->>>>>>> 1390593ffa5e7bb38d5a99aeb1b3830d3651899c
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
 
