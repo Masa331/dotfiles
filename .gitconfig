@@ -1,23 +1,28 @@
 [user]
-	email = pdonat@seznam.cz
-	name = Premysl Donat
+  email = donat@uol.cz
+  name = Premysl Donat
+
 [color]
-	ui = auto
+  ui = auto
 
 [alias]
-    rebx = rebase -i HEAD~10
-    rhi = reset --hard HEAD~1
-    rsi = reset --soft HEAD~1
-    rhx = reset --hard HEAD~10
-    rsx = reset --soft HEAD~10
-    rhxx = reset --hard HEAD~20
-    rebc = rebase --continue
-    merc = merge --continue
-    picc = cherry-pick --continue
-    ci = commit
-    br = branch
-    co = checkout
-    lol = log --pretty=oneline --abbrev-commit --graph --decorate
-    pm = pull origin master
+  rebx = rebase -i HEAD~10
+  rhi = reset --hard HEAD~1
+  rsi = reset --soft HEAD~1
+  rhx = reset --hard HEAD~10
+  rsx = reset --soft HEAD~10
+  rhxx = reset --hard HEAD~20
+  rebc = rebase --continue
+  merc = merge --continue
+  picc = cherry-pick --continue
+  ci = commit
+  br = branch
+  co = checkout
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  pm = pull origin master
+
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
+
+[push]
+  default = current
