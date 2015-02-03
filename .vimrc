@@ -57,6 +57,8 @@ set wildmode=list:longest,list:full
 
 syntax enable
 au BufReadPost *.cap set syntax=ruby
+au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile *.pgsql set filetype=sql
 
 " ### Vim ColorScheme
 " colorscheme grb256
