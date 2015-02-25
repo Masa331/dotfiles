@@ -51,4 +51,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ### Aliases
 alias ls='ls --color=auto'
-alias la='ls -a --color=auto'
+alias la='ls -al --color=auto'
