@@ -1,5 +1,3 @@
-Pry.config.ls.ceiling = []
-
 Pry.commands.alias_command 'lai', 'ls -mpi'
 Pry.commands.alias_command 'lac', 'ls -Mmpic'
 
