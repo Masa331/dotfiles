@@ -41,14 +41,15 @@ function git-title {
 }
 export PROMPT_COMMAND="git-title"
 
+
+### Aliases
+alias ls='ls --color=auto'
+alias la='ls -al --color=auto'
+
 ### Settings
 export GREP_OPTIONS='--color=auto'
 export export TERM='xterm-256color'
 # http://blog.davidchelimsky.net/2011/07/18/stop-typing-bundle-exec/
 export PATH=./bin:$PATH
 export EDITOR=vim
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-### Aliases
-alias ls='ls --color=auto'
-alias la='ls -al --color=auto'
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
