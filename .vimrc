@@ -62,8 +62,8 @@ au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.coffee set filetype=coffee
 
 " ### Vim ColorScheme
-" colorscheme grb256
 colorscheme inkpot
+set t_ut=
 
 " ### Airline configuration
 let g:airline#extensions#tabline#enabled = 1
