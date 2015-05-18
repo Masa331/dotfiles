@@ -21,13 +21,11 @@ Plugin 'Masa331/vim-snippets'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
 Plugin 'groenewege/vim-less'
 Plugin 'briancollins/vim-jst'
-Plugin 'bling/vim-airline'
 Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
@@ -64,14 +62,6 @@ au BufRead,BufNewFile *.coffee set filetype=coffee
 " ### Vim ColorScheme
 colorscheme inkpot
 set t_ut=
-
-" ### Airline configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_powerline_fonts = 1
-let g:airline_section_c = "%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#"
-let g:airline_section_b = ""
-
 
 " ### Mappings
 map   <silent> <F5> mmgg=G`m^
