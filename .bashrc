@@ -48,8 +48,9 @@ alias la='ls -al --color=auto'
 
 ### Settings
 export GREP_OPTIONS='--color=auto'
-export export TERM='xterm-256color'
 # http://blog.davidchelimsky.net/2011/07/18/stop-typing-bundle-exec/
 # export PATH=./bin:$PATH
 export EDITOR=vim
 export PATH="$PATH:/usr/local/Qt-5.4.1/bin" # Add RVM to PATH for scripting
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
