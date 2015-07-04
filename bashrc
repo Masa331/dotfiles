@@ -12,6 +12,10 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+    source /usr/share/git/completion/git-prompt.sh
+fi
+
 # handle different history files each host
 if [[ `hostname` == dev ]]; then
   export HISTFILE="$HOME/.bash_history_dev"
@@ -48,9 +52,6 @@ alias la='ls -al --color=auto'
 
 ### Settings
 export GREP_OPTIONS='--color=auto'
-# http://blog.davidchelimsky.net/2011/07/18/stop-typing-bundle-exec/
-# export PATH=./bin:$PATH
 export EDITOR=vim
-export PATH="$PATH:/usr/local/Qt-5.4.1/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
