@@ -1,3 +1,4 @@
+Pry.config.editor = 'vim'
 Pry.commands.alias_command 'lai', 'ls -mpi'
 Pry.commands.alias_command 'lac', 'ls -Mmpic'
 

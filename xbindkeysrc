@@ -79,10 +79,10 @@
   m:0x0 + c:122
 
 "firefox"
-  c:41 + m:0x4
+  m:0x40 + c:41
 
 "xterm"
-  m:0x4 + c:53
+  m:0x40 + c:53
 
 "xbacklight -dec 10"
   XF86MonBrightnessDown

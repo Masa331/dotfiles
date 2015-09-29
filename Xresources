@@ -1,9 +1,11 @@
 ! xterm ----------------------------------------------------------------------
 
-xterm*font: terminus-11
+xterm*font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+
 xterm*loginShell: true
-xterm*vt100*geometry: 80x50
-xterm*termName: xterm-256-color
+xterm*vt100*geometry: 80x13
+XTerm*termName: xterm-256color
+xterm*locale: true
 
 xterm*foreground: rgb:a8/a8/a8
 xterm*background: rgb:00/00/00

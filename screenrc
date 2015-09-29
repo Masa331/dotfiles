@@ -1,4 +1,6 @@
 shell -${SHELL}
+term 'xterm-256color'
+defscrollback 1000
 
 bindkey "^[[1;3D" prev # xterm: alt + left arrow
 bindkey "^[[1;3C" next # xterm: alt + right arrow
