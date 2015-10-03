@@ -8,12 +8,8 @@ bindkey "^[[d" prev
 bindkey "^[[c" next
 
 screen -t git
-select 0
-stuff "echo 'AHOJ'; gitsh^M"
 screen -t bash
 screen -t vim
 screen -t test-single
-screen -t test-all
-screen -t server
 caption always "%H%=%-Lw%{R.}%n%f*%{-} %t%+Lw%=%c:%s"
 hardstatus alwayslastline "%n %t%? - %h"
