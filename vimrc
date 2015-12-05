@@ -29,6 +29,7 @@ Plugin 'briancollins/vim-jst'
 Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
+Plugin 'dleonard0/pony-vim-syntax'
 
 call vundle#end()
 

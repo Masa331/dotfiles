@@ -1,2 +1,3 @@
 \setenv PAGER less
+\pset null 'NULL'
 
