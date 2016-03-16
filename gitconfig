@@ -14,12 +14,13 @@
   rhxx = reset --hard HEAD~20
   rebc = rebase --continue
   merc = merge --continue
-  picc = cherry-pick --continue
   ci = commit
   br = branch
   co = checkout
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   pm = pull origin master
+  s = status
+  c = clean -fd
 
 [branch]
   autosetuprebase = always

@@ -17,7 +17,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'Masa331/vim-snippets'
+Plugin 'honza/vim-snippets'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
@@ -30,6 +30,7 @@ Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
 Plugin 'dleonard0/pony-vim-syntax'
+Plugin 'robertmeta/nofrils'
 
 call vundle#end()
 
@@ -57,12 +58,15 @@ set wildmode=list:longest,list:full
 syntax enable
 au BufReadPost *.cap set syntax=ruby
 au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile *.csvbuilder set filetype=ruby
 au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.coffee set filetype=coffee
 
 " ### Vim ColorScheme
-colorscheme inkpot
-set t_ut=
+" colorscheme inkpot
+" set t_ut=
+colorscheme nofrils-dark
+let g:nofrils_strbackgrounds = 1
 
 " ### Mappings
 map   <silent> <F5> mmgg=G`m^

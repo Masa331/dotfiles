@@ -33,14 +33,10 @@ function git-title {
 }
 export PROMPT_COMMAND="git-title"
 
-
 ### Aliases
-alias ls='ls --color=auto'
-alias la='ls -al --color=auto'
-
-alias grep='grep --color'
-
-alias prspec='./bin/test rake parallel:spec'
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
 
 ### Settings
 export EDITOR=vim

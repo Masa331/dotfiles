@@ -8,7 +8,7 @@ XTerm*termName: xterm-256color
 xterm*locale: true
 
 xterm*foreground: rgb:a8/a8/a8
-xterm*background: rgb:00/00/00
+xterm*background: #262626
 
 xterm*color0: rgb:00/00/00
 xterm*color1: rgb:a8/00/00
