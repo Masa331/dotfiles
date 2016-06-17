@@ -21,6 +21,7 @@
   pm = pull origin master
   s = status
   c = clean -fd
+  fuck = reset --hard HEAD~1
 
 [branch]
   autosetuprebase = always

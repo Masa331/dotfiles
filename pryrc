@@ -1,6 +1,5 @@
 Pry.config.editor = 'vim'
-Pry.commands.alias_command 'lai', 'ls -mpi'
-Pry.commands.alias_command 'lac', 'ls -Mmpic'
+#Pry.config.requires = ['hovno']
 
 if defined?(PryDebugger)
   Pry.commands.alias_command 'c', 'continue'

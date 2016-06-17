@@ -31,6 +31,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
 Plugin 'dleonard0/pony-vim-syntax'
 Plugin 'robertmeta/nofrils'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'vim-scripts/AutoComplPop'
 
 call vundle#end()
 
@@ -63,10 +65,10 @@ au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.coffee set filetype=coffee
 
 " ### Vim ColorScheme
-" colorscheme inkpot
-" set t_ut=
-colorscheme nofrils-dark
-let g:nofrils_strbackgrounds = 1
+colorscheme inkpot
+set t_ut=
+" colorscheme nofrils-dark
+" let g:nofrils_strbackgrounds = 1
 
 " ### Mappings
 map   <silent> <F5> mmgg=G`m^
