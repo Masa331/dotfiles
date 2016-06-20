@@ -33,6 +33,9 @@ Plugin 'dleonard0/pony-vim-syntax'
 Plugin 'robertmeta/nofrils'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'vim-scripts/AutoComplPop'
+" vim-misc needs to be present for vim-lua-ftplugin
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-lua-ftplugin'
 
 call vundle#end()
 
@@ -63,6 +66,7 @@ au BufRead,BufNewFile *.thor set filetype=ruby
 au BufRead,BufNewFile *.csvbuilder set filetype=ruby
 au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.coffee set filetype=coffee
+au BufRead,BufNewFile *.nse set filetype=lua
 
 " ### Vim ColorScheme
 colorscheme inkpot
