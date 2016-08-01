@@ -32,7 +32,6 @@ Plugin 'moll/vim-bbye'
 Plugin 'dleonard0/pony-vim-syntax'
 Plugin 'robertmeta/nofrils'
 Plugin 'lambdatoast/elm.vim'
-Plugin 'vim-scripts/AutoComplPop'
 " vim-misc needs to be present for vim-lua-ftplugin
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
@@ -97,3 +96,6 @@ let mapleader = ","
 map <Leader>g :bp<CR>
 map <Leader>h :bn<CR>
 map <Leader>x :Bdelete<CR>
+
+" ### Elm mappings
+nnoremap <Leader>er :ElmRepl<CR>
