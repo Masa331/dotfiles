@@ -17,7 +17,8 @@ if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 fi
 
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo " +"
+  # [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo " +"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo " +"
 }
 
 PS1='\[\033[0;32m\]$(hostname) \[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " [\[\033[0;33m\]%s$(parse_git_dirty)\[\033[00m\]]")\$ '
