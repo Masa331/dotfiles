@@ -19,6 +19,7 @@
   co = checkout
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   pm = pull origin master
+  pd = pull origin development
   s = status
   c = clean -fd
   fuck = reset --hard HEAD~1

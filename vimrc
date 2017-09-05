@@ -20,21 +20,22 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'ngmy/vim-rubocop'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'ngmy/vim-rubocop'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
-Plugin 'groenewege/vim-less'
-Plugin 'briancollins/vim-jst'
+" Plugin 'groenewege/vim-less'
+" Plugin 'briancollins/vim-jst'
 Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
-Plugin 'dleonard0/pony-vim-syntax'
-Plugin 'robertmeta/nofrils'
-Plugin 'lambdatoast/elm.vim'
+" Plugin 'dleonard0/pony-vim-syntax'
+" Plugin 'robertmeta/nofrils'
+" Plugin 'lambdatoast/elm.vim'
 " vim-misc needs to be present for vim-lua-ftplugin
 Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-lua-ftplugin'
+" Plugin 'xolox/vim-lua-ftplugin'
 
 call vundle#end()
 
@@ -69,9 +70,6 @@ au BufRead,BufNewFile *.nse set filetype=lua
 
 " ### Vim ColorScheme
 colorscheme inkpot
-set t_ut=
-" colorscheme nofrils-dark
-" let g:nofrils_strbackgrounds = 1
 
 " ### Mappings
 map   <silent> <F5> mmgg=G`m^
@@ -96,6 +94,3 @@ let mapleader = ","
 map <Leader>g :bp<CR>
 map <Leader>h :bn<CR>
 map <Leader>x :Bdelete<CR>
-
-" ### Elm mappings
-nnoremap <Leader>er :ElmRepl<CR>
