@@ -1,6 +1,11 @@
-shell -${SHELL}
-term 'xterm-256color'
-defscrollback 1000
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+
+# shell -${SHELL}
+# term 'xterm-256color'
+# term xterm
+# defscrollback 1000
 
 bindkey "^[[1;3D" prev # xterm: alt + left arrow
 bindkey "^[[1;3C" next # xterm: alt + right arrow

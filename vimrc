@@ -20,22 +20,12 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
-" Plugin 'mxw/vim-jsx'
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'ngmy/vim-rubocop'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
-" Plugin 'groenewege/vim-less'
-" Plugin 'briancollins/vim-jst'
 Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
-" Plugin 'dleonard0/pony-vim-syntax'
-" Plugin 'robertmeta/nofrils'
-" Plugin 'lambdatoast/elm.vim'
-" vim-misc needs to be present for vim-lua-ftplugin
 Plugin 'xolox/vim-misc'
-" Plugin 'xolox/vim-lua-ftplugin'
 
 call vundle#end()
 
@@ -65,8 +55,8 @@ au BufReadPost *.cap set syntax=ruby
 au BufRead,BufNewFile *.thor set filetype=ruby
 au BufRead,BufNewFile *.csvbuilder set filetype=ruby
 au BufRead,BufNewFile *.pgsql set filetype=sql
-au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.nse set filetype=lua
+au BufRead,BufNewFile *.sshconfig set filetype=sshconfig
 
 " ### Vim ColorScheme
 colorscheme inkpot
@@ -75,21 +65,12 @@ colorscheme inkpot
 map   <silent> <F5> mmgg=G`m^
 imap  <silent> <F5> <Esc> mmgg=G`m^
 let g:snippetsEmu_key = "<S-Tab>"
-command! Rroutes :e config/routes.rb
-command! RTroutes :tabe config/routes.rb
 nnoremap ; :
 
 " ### One character append to space+char
 :nnoremap <space> :exec "normal a".nr2char(getchar())."\e"<CR>
 
-" ### word a omnicompletition to ctrl-space
-inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-      \ "\<lt>C-n>" :
-      \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-      \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-      \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
-imap <C-@> <C-Space>
-
+" ### Leader
 let mapleader = ","
 map <Leader>g :bp<CR>
 map <Leader>h :bn<CR>

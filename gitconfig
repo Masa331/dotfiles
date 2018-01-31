@@ -1,5 +1,5 @@
 [user]
-	email = pdonat@seznam.cz
+  email = pdonat@seznam.cz
   name = Premysl Donat
 
 [color]
@@ -21,8 +21,7 @@
   pm = pull origin master
   pd = pull origin development
   s = status
-  c = clean -fd
-  fuck = reset --hard HEAD~1
+  amend = commit --amend --no-edit
 
 [branch]
   autosetuprebase = always
