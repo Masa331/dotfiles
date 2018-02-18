@@ -42,4 +42,5 @@ fi
 export EDITOR=vim
 export TERM=xterm-256color
 export PATH=/opt/ruby2.4/bin/:$PATH
+export PATH=/home/masa331/bin/:$PATH
 export PATH=$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
