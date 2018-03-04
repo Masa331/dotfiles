@@ -65,7 +65,8 @@ colorscheme inkpot
 map   <silent> <F5> mmgg=G`m^
 imap  <silent> <F5> <Esc> mmgg=G`m^
 let g:snippetsEmu_key = "<S-Tab>"
-nnoremap ; :
+" Exit insert mode and save file on F2
+:imap <F2> <Esc>:w<CR>
 
 " ### One character append to space+char
 :nnoremap <space> :exec "normal a".nr2char(getchar())."\e"<CR>
