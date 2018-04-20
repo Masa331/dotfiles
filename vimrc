@@ -26,6 +26,7 @@ Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
 Plugin 'xolox/vim-misc'
+Plugin 'mxv/vim-jsx'
 
 call vundle#end()
 
@@ -49,6 +50,7 @@ set smartcase
 set number
 set completeopt=longest,menu
 set wildmode=list:longest,list:full
+set switchbuf=newtab
 
 syntax enable
 au BufReadPost *.cap set syntax=ruby
@@ -77,3 +79,6 @@ let mapleader = ","
 map <Leader>g :bp<CR>
 map <Leader>h :bn<CR>
 map <Leader>x :Bdelete<CR>
+
+" If you use JSX syntax in .js files, which is now becoming standard, add:
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
