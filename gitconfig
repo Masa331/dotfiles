@@ -17,7 +17,7 @@
   ci = commit
   br = branch
   co = checkout
-  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   pm = pull origin master
   pd = pull origin development
   s = status

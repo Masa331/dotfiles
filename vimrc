@@ -19,14 +19,14 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/ruby-matchit'
 Plugin 'boblin/pgsql.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'moll/vim-bbye'
 Plugin 'xolox/vim-misc'
-Plugin 'mxv/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -59,6 +59,7 @@ au BufRead,BufNewFile *.csvbuilder set filetype=ruby
 au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.nse set filetype=lua
 au BufRead,BufNewFile *.sshconfig set filetype=sshconfig
+au BufRead,BufNewFile *.svg set filetype=xml
 
 " ### Vim ColorScheme
 colorscheme inkpot
