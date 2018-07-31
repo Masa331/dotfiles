@@ -27,6 +27,7 @@ Plugin 'moll/vim-bbye'
 Plugin 'xolox/vim-misc'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'tomlion/vim-solidity'
 
 call vundle#end()
 
