@@ -42,7 +42,9 @@ fi
 export EDITOR=vim
 export TERM=xterm-256color
 export PATH=/home/masa331/bin/:$PATH
-export PATH=$(ruby -r rubygems -e "puts Gem.user_dir")/bin:$PATH
+export PATH=/root/bin/:$PATH
+export PATH=/root/.cargo/bin/:$PATH
+export RAILS_ENV=development
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
