@@ -7,3 +7,5 @@ alias remigrate='git reset db/structure.sql;git co db/structure.sql;rake db:drop
 alias g='git'
 alias webrick='rails s webrick'
 alias rspec='bundle exec rspec'
+
+alias monitoroff='xset dpms force off'

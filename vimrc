@@ -29,6 +29,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'tomlion/vim-solidity'
 Plugin 'cespare/vim-toml'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 
