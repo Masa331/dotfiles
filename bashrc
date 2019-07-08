@@ -107,3 +107,4 @@ cdnvm(){
     fi
 }
 alias cd='cdnvm'
+eval "$(direnv hook bash)"
