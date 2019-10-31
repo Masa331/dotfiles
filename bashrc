@@ -106,3 +106,5 @@ cdnvm(){
     fi
 }
 alias cd='cdnvm'
+
+export PATH=/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/root/.nvm/versions/node/v10.9.0/bin:/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/usr/local/rvm/gems/ruby-2.6.3/bin:/usr/local/rvm/gems/ruby-2.6.3@global/bin:/usr/local/rvm/rubies/ruby-2.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/rvm/bin:/root/.pulumi/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.pulumi/bin:/root/bin/gyb
