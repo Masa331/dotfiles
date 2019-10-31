@@ -64,6 +64,7 @@ au BufRead,BufNewFile *.pgsql set filetype=sql
 au BufRead,BufNewFile *.nse set filetype=lua
 au BufRead,BufNewFile *.sshconfig set filetype=sshconfig
 au BufRead,BufNewFile *.svg set filetype=xml
+au BufRead,BufNewFile *.liquid set filetype=html
 
 " ### Vim ColorScheme
 colorscheme inkpot
