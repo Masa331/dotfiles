@@ -13,8 +13,8 @@ bindkey "^[[d" prev
 bindkey "^[[c" next
 
 screen -t git
-screen -t bash
 screen -t vim
-screen -t test-single
+screen -t bash
+screen -t server
 caption always "%H%=%-Lw%{R.}%n%f*%{-} %t%+Lw%=%c:%s"
 hardstatus alwayslastline "%n %t%? - %h"

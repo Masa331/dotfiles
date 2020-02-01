@@ -7,8 +7,6 @@ xterm*vt100*geometry: 240x13
 XTerm*termName: xterm-256color
 xterm*locale: true
 
-! xterm*vt100*selectToClipboard: true
-
 xterm*foreground: rgb:a8/a8/a8
 xterm*background: #262626
 
