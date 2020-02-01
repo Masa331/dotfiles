@@ -31,6 +31,7 @@ Plugin 'tomlion/vim-solidity'
 Plugin 'cespare/vim-toml'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 
@@ -65,6 +66,7 @@ au BufRead,BufNewFile *.nse set filetype=lua
 au BufRead,BufNewFile *.sshconfig set filetype=sshconfig
 au BufRead,BufNewFile *.svg set filetype=xml
 au BufRead,BufNewFile *.liquid set filetype=html
+au BufRead,BufNewFile *.vue set filetype=vue
 
 " ### Vim ColorScheme
 colorscheme inkpot

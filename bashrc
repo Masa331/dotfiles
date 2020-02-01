@@ -97,4 +97,4 @@ cdnvm(){
 }
 alias cd='cdnvm'
 
-export PATH=/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/root/.nvm/versions/node/v10.9.0/bin:/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.pulumi/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.pulumi/bin:/root/bin/gyb:/root/.gem/ruby/2.6.0/bin
+export PATH=/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/root/.nvm/versions/node/v10.9.0/bin:/root/.cargo/bin/:/root/bin/:/home/masa331/bin/:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.pulumi/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.pulumi/bin:/root/bin/gyb:/root/.gem/ruby/2.6.0/bin:/bin
