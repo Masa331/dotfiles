@@ -22,17 +22,6 @@ function parse_git_dirty {
 
 PS1='\[\033[0;32m\]$(hostname) \[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " [\[\033[0;33m\]%s$(parse_git_dirty)\[\033[00m\]]")\$ '
 
-### Sets terminal title to git branch
-function git-title {
-  local title
-  if ! title="`git rev-parse --abbrev-ref HEAD 2>/dev/null`"; then
-    # Not a git repository
-    title="bash"
-  fi
-  echo -ne "\033]2;$title\007"
-}
-export PROMPT_COMMAND="git-title"
-
 ### Aliases
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
