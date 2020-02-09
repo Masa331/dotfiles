@@ -1,5 +1,6 @@
 ! xterm ----------------------------------------------------------------------
 
+XTerm*cursorColor: #FF0000
 xterm*font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
 
 xterm*loginShell: true
