@@ -38,4 +38,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=/root/bin/:/root/.nvm/versions/node/v10.9.0/bin:/root/bin/:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/usr/bin/core_perl:/root/bin/gyb:/root/.gem/ruby/2.6.0/bin:/bin
+export PATH=/root/bin/:/root/.nvm/versions/node/v10.9.0/bin:/root/bin/:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/usr/bin/core_perl:/root/bin/gyb:/root/.gem/ruby/2.7.0/bin:/bin
