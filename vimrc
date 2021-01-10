@@ -51,6 +51,8 @@ set number
 set completeopt=longest,menu
 set wildmode=list:longest,list:full
 set switchbuf=newtab
+set hlsearch    " highlight all search results
+set noswapfile  " disable swap file
 
 syntax enable
 au BufReadPost *.cap set syntax=ruby
